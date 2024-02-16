@@ -27,8 +27,6 @@ This code makes use of several Python libraries:
 
 * **Arta Khosravi** - [artakh10](https://github.com/artakh10)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 
 ## Citation
 If you use the code, please link this repository, and cite the related arXiv article.
