@@ -17,8 +17,8 @@ Give an example
 This code makes use of several Python libraries:
 
 * NumPy
-* matplotlib
-* scipy
+* Matplotlib
+* SciPy
 * seaborn
 
 ## Authors
