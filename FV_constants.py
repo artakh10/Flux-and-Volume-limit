@@ -14,7 +14,7 @@ OMP =  0.3111 #Cold dark matter density according to Planck'18
 OKP=0.001 #Curvature density according to Planck'18
 OLP=0.6889 #Dark energy density according to Planck'18
 
-M_bol_sun= 4.74 ; #Bolometric magnitude of the sun
+M_bol_sun= 4.74; #Bolometric magnitude of the sun
 L_sun =4e+33; # Luminosity of the sun
 m_app_sun= -26.832; #Apparent magnitude of the sun
 m_2010=17.77; #Apparent magnitude in Tago'
