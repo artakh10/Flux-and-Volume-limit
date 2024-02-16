@@ -29,12 +29,9 @@ This code makes use of several Python libraries:
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Citation
-If you use the code, please link this repository, and cite arXiv:felan.
+If you use the code, please link this repository, and cite the related arXiv article.
 
 ## Contact
 For comments, questions and etc. you can reach me at artakh10@gmail.com.
