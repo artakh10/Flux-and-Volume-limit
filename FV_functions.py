@@ -12,7 +12,7 @@ import math
 from FV_constants import *
 
 ##---Distance based---##
-def H2(z): # Hubble function, s^-2 , we can just use H_0 instead
+def H2(z): # Squared Hubble function, s^-2 , we can just use H_0 instead
     return (H0**2)*(((OMP)*((1 + z)**3))+ (OLP))
 def Xlintegrat(z): #Comoving Distance to the object
     res=integrate.quad((lambda x : 1/(np.sqrt(H2(x)))),0,z)
