@@ -3,7 +3,7 @@ The required code for flux and volume limiting datasets using the Friends of Fri
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing. See deployment for notes on how to deploy the project on a live system.
+These instructions will help you set up and run the project on your local machine for development and testing. Refer to the **Code Description** section for guidance on deploying the project on a live system.
 
 ## Code Description
 Here is a description of the different programs and files used in this repository:
@@ -22,6 +22,7 @@ This code makes use of several Python libraries:
 * ```NumPy```
 * ```Matplotlib```
 * ```SciPy```
+* ```Pandas```
 
 ## Authors
 
