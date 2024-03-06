@@ -13,11 +13,11 @@ Here is a description of the different programs and files used in this repositor
   <pre>data=pd.read_csv('***.csv'),</pre>
   and replace "***.csv" with the data you wish to use.\
   Parameters defined in this code such as
-  <pre>z=data['z'].values
-  mbh=data['log_bh'].values
-  lbol=data['log_lbol'].values
-  edd=data['log_edd_ratio'].values
-  name=data['name']</pre>
+  <pre>z=data['z'].values #redshift
+  mbh=data['log_bh'].values #Black Hole mass
+  lbol=data['log_lbol'].values #Bolometric luminosity
+  edd=data['log_edd_ratio'].values #Eddington ratio
+  name=data['name'] #Name of the object</pre>
   can be replaced with your desired parameters as well.
 ### Constants
 * ```constants.py:``` Relevant cosmological and physical constants.\ You can replace the mentioned constants to match your desired model and data.\
@@ -32,9 +32,9 @@ Here is a description of the different programs and files used in this repositor
   <pre>def H2(z) # Squared Hubble function, s^-2 , we can just use H_0 instead</pre>
   or luminosity distance,
   <pre>def Xlintegrat(z): #Comoving Distance to the object
-    def Skflat(z): #S_k(chi) for Omega_curvature = 0
-    def DLflat(z): #Luminosity distance for Omega_curvature = 0 Or Flat Universe #k=0 #INCLUDES "ALL" REDSHIFTS
-    def d_L(z): #luminosity distance #ESTIMATION FOR "LOWER" REDSHIFTS</pre>
+  def Skflat(z): #S_k(chi) for Omega_curvature = 0
+  def DLflat(z): #Luminosity distance for all redshifts, for Omega_curvature = 0 Or Flat Universe
+  def d_L(z): #luminosity distance, estimation for lower redshifts</pre>
     to match your preferred cosmological model.
 
 
