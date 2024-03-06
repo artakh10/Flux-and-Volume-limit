@@ -7,14 +7,35 @@ These instructions will help you set up and run the project on your local machin
 
 ## Code Description
 Here is a description of the different programs and files used in this repository:
-
-
-* ```Creating Flux and Volume limited Sample of Quasars.ipynb:``` runs the code for firstly grouping the quasars, dropping those inefficient based on flux limitation using the Friends of Friends (FOF) algorithm, and eventually dividing them into subsamples using volume limitation. You can import your dataset to your liking, change the parameters accordingly, and replace "***.csv" with the data you wish to import.
-
-* ```constants.py:``` Relevant cosmological and physical constants. You can replace the mentioned constants to match your desired model and data.
-Constants such as the CDM and DE density or the scale factor in t_0 (a), Linking Length (LL0), and redshift (z_s), which are all constants used for flux limitation, can be modified according to your cosmological model or the data you're working with.
-
-* ```functions.py:``` Functions used in the ```Creating Flux and Volume limited Sample of Quasars.ipynb``` program based on distance, luminosity, and magnitude. You can modify the functions to match your model and adjust the functions such as the Hubble function or luminosity distance to match your preferred cosmological model.
+### Main Project File
+* ```Creating Flux and Volume limited Sample of Quasars.ipynb:``` runs the code for firstly grouping the quasars, dropping those inefficient based on flux limitation using the Friends of Friends (FOF) algorithm, and eventually dividing them into subsamples using volume limitation.
+  You can import your dataset to your liking, and change the parameters accordingly such as
+  <pre>data=pd.read_csv('***.csv'),</pre>
+  and replace "***.csv" with the data you wish to use.\
+  Parameters defined in this code such as
+  <pre>z=data['z'].values
+  mbh=data['log_bh'].values
+  lbol=data['log_lbol'].values
+  edd=data['log_edd_ratio'].values
+  name=data['name']</pre>
+  can be replaced with your desired parameters as well.
+### Constants
+* ```constants.py:``` Relevant cosmological and physical constants.\ You can replace the mentioned constants to match your desired model and data.\
+  Constants such as the CDM and DE density or the scale factor in t_0 (a), Linking Length (LL0), and redshift (z_s),
+  <pre>a=1; #Scale factor in t=t0
+  LL0=0.25; #Linking length_0
+  z_s=0.05; #Redshift for star</pre>
+    which are all constants used for flux limitation, can be modified according to your cosmological model or the data you're working with.
+### Functions
+* ```functions.py:``` Functions used in the ```Creating Flux and Volume limited Sample of Quasars.ipynb``` program based on distance, luminosity, and magnitude.\
+  You can modify the functions to match your model and adjust the functions such as the Hubble function,
+  <pre>def H2(z) # Squared Hubble function, s^-2 , we can just use H_0 instead</pre>
+  or luminosity distance,
+  <pre>def Xlintegrat(z): #Comoving Distance to the object
+    def Skflat(z): #S_k(chi) for Omega_curvature = 0
+    def DLflat(z): #Luminosity distance for Omega_curvature = 0 Or Flat Universe #k=0 #INCLUDES "ALL" REDSHIFTS
+    def d_L(z): #luminosity distance #ESTIMATION FOR "LOWER" REDSHIFTS</pre>
+    to match your preferred cosmological model.
 
 
 ## Requisites
